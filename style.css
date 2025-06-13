@@ -19,19 +19,21 @@ header span {
   color: #ccc;
 }
 
-.typewriter {
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid white;
-  width: 0;
-  animation: typing 4s steps(40, end) forwards;
+.subtitle {
+  font-size: 1.3em;
+  color: #ccc;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: smoothFade 1.2s ease-out 0.2s forwards;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+@keyframes smoothFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 
 section {
   padding: 40px 20px;
